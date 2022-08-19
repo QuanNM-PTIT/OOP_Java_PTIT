@@ -9,8 +9,6 @@ public class J02006
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt(), m = sc.nextInt();
         int[] a = new int[n], b = new int[m], f = new int[1005];
-        for(int i = 1; i <= 1000; ++i)
-            f[i] = 0;
         for(int i = 0; i < n; ++i)
         {
             a[i] = sc.nextInt();
