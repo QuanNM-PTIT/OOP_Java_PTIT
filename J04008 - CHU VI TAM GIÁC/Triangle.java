@@ -18,7 +18,6 @@ public class Triangle
         this.AB = A.getDist(B);
         this.AC = A.getDist(C);
         this.BC = B.getDist(C);
-
     }
 
     @Override
