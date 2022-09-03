@@ -16,7 +16,7 @@ public class J01011
     {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        while(t-- > 0)
+        while (t-- > 0)
         {
             long a = sc.nextLong(), b = sc.nextLong();
             long GCD = gcd(a, b);
