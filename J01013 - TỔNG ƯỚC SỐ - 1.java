@@ -28,6 +28,6 @@ public class J01013
                 x /= a[x];
             }
         }
-        System.out.println(sum);
+        System.out.println(sum); 
     }
 }
