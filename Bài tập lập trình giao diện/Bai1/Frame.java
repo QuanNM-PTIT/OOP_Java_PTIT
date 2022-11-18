@@ -17,7 +17,6 @@ public class Frame extends JFrame
     public Frame() throws HeadlessException
     {
         super("Color Box");
-
         panel = new JPanel();
         tools = new JPanel();
         button = new JButton("Change Color");
@@ -69,5 +68,11 @@ public class Frame extends JFrame
                 }
             }
         });
+
+        setSize(600, 600);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setResizable(true);
+        setLocationRelativeTo(null);
+        setVisible(true);
     }
 }
