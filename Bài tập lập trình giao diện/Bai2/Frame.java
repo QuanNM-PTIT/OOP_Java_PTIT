@@ -9,7 +9,6 @@ import java.awt.event.ActionListener;
 
 public class Frame extends JFrame implements ActionListener
 {
-    private JPanel panel;
     private JPanel tools;
     private JButton OK;
     private JComboBox<String> color;
@@ -24,7 +23,6 @@ public class Frame extends JFrame implements ActionListener
     {
         super("Drawing Geometry");
 
-        panel = new JPanel();
         tools = new JPanel();
         color = new JComboBox<>();
         type = new JComboBox<>();
@@ -34,7 +32,6 @@ public class Frame extends JFrame implements ActionListener
         selectedColor = Color.red;
         selectedType = "Fill";
 
-        panel.setLayout(new BorderLayout());
         setLayout(new BorderLayout());
 
         type.addItem("Fill");
