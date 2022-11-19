@@ -77,11 +77,6 @@ public class StillClock extends JPanel implements Runnable
         this.second = calendar.get(Calendar.SECOND);
     }
 
-    public Dimension getPreferredSize()
-    {
-        return new Dimension(200, 200);
-    }
-
     @Override
     public void run()
     {
