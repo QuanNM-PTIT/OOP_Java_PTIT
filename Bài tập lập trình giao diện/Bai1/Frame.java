@@ -71,7 +71,7 @@ public class Frame extends JFrame
 
         setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setResizable(true);
+        setResizable(false);
         setLocationRelativeTo(null);
         setVisible(true);
     }
