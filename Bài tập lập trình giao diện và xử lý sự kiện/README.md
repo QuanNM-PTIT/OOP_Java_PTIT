@@ -15,7 +15,7 @@ các số 3, 6, 9, 12. Ở phía dưới, hiển thị thêm một đồng hồ 
 giờ:phút:giây (định dạng 24h).
 
 4. Viết chương trình mô phỏng máy tính bỏ túi với các chức năng cơ bản: cộng,
-trừ, nhân chia, lũy thừa, căn bậc hai.
+trừ, nhân, chia, lũy thừa, căn bậc hai.
 
 5. Viết chương trình cho phép chọn file ảnh trong ổ cứng và hiển thị lên giao
 diện. Cho phép thay đổi kích thước khung hiển thị và hiển thị nhiều ảnh.
