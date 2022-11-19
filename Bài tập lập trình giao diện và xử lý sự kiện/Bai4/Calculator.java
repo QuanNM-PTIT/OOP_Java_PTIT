@@ -235,7 +235,8 @@ public class Calculator extends JFrame implements ActionListener
                     }
                     num.push(val);
                     --i;
-                } else
+                }
+                else
                 {
                     while (!op.isEmpty() && degree(op.peek()) >= degree(s.charAt(i)))
                     {
