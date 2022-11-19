@@ -197,7 +197,7 @@ public class Calculator extends JFrame implements ActionListener
         return 0;
     }
 
-    private long calc(long a, long b, char c)
+    private double calc(double a, double b, char c)
     {
         switch (c)
         {
@@ -208,7 +208,7 @@ public class Calculator extends JFrame implements ActionListener
             case '*':
                 return a * b;
             case '^':
-                return (long) Math.pow(a, b);
+                return Math.pow(a, b);
             default:
                 return a / b;
         }
@@ -218,11 +218,11 @@ public class Calculator extends JFrame implements ActionListener
     {
         try
         {
-            Stack<Long> num = new Stack<>();
+            Stack<Double> num = new Stack<>();
             Stack<Character> op = new Stack<>();
-            long val, val1, val2;
+            double val, val1, val2;
             char top;
-            num.push(0L);
+            num.push((double) 0);
             for (int i = 0; i < s.length(); ++i)
             {
                 if (s.charAt(i) >= '0' && s.charAt(i) <= '9')
@@ -260,6 +260,9 @@ public class Calculator extends JFrame implements ActionListener
                 op.pop();
                 num.push(calc(val1, val2, top));
             }
+            double result = num.peek();
+            if (result == (long) result)
+                return String.valueOf((long) result);
             return String.valueOf(num.peek());
         }
         catch (Exception e)
