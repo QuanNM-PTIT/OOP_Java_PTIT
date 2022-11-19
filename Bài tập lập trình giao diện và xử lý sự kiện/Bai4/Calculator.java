@@ -222,6 +222,7 @@ public class Calculator extends JFrame implements ActionListener
             Stack<Character> op = new Stack<>();
             long val, val1, val2;
             char top;
+            num.push(0L);
             for (int i = 0; i < s.length(); ++i)
             {
                 if (s.charAt(i) >= '0' && s.charAt(i) <= '9')
