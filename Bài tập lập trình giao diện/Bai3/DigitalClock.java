@@ -30,7 +30,7 @@ public class DigitalClock extends JPanel implements Runnable
     @Override
     public void run()
     {
-        SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss aa");
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
         while(true)
         {
             Date now = new Date();
