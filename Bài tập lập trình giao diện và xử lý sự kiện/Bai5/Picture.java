@@ -20,6 +20,6 @@ public class Picture extends JPanel
     protected void paintComponent(Graphics g)
     {
         super.paintComponent(g);
-        g.drawImage(img, 0, 0, getWidth(), getHeight(), null); // see javadoc for more info on the parameters
+        g.drawImage(img, 0, 0, getWidth(), getHeight(), null);
     }
 }
