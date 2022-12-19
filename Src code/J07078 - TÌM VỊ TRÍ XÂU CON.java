@@ -1,4 +1,3 @@
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -17,7 +16,7 @@ public class Main
             {
                 int len = a.length() - b.length();
                 for (int i = 0; i <= len; ++i)
-                    if (b.equals(a.substring(i, i + b.length())))
+                    if (a.charAt(i) == b.charAt(0) && b.equals(a.substring(i, i + b.length())))
                         System.out.print((i + 1) + " ");
             }
             System.out.println();
